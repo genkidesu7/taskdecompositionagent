@@ -1,0 +1,13 @@
+# Runtime configuration loaded separately from the static agent manifest.
+max_retry: 3
+timeout_s: 30
+memory_enabled: false
+hitl:
+  enabled: false
+team_velocity_points: 20
+max_task_points: 8
+max_tasks: 50
+llm_max_tokens: 2500
+max_input_length: 2000
+content_safety_enabled: true
+llm_provider: "azure_openai"

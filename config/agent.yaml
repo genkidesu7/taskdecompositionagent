@@ -1,0 +1,18 @@
+# AgentRegistry discovery manifest. All keys are intentionally at root level.
+id: "CMN-C1-149"
+name: "TaskDecompositionAgent"
+namespace: "agent1000"
+version: "1.0.0"
+enabled: true
+category: "Cat 1"
+generation_mode: "llm"
+industry: "CMN"
+base_type: "AgentBaseGraph"
+class: "src.graph.graph.Graph"
+required_trust_level: "INTERNAL"
+requires:
+  secrets:
+    - AZURE_OPENAI_API_KEY
+    - AZURE_OPENAI_ENDPOINT
+    - AZURE_OPENAI_DEPLOYMENT
+  extras: ["openai"]
